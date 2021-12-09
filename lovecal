@@ -1,0 +1,60 @@
+def calculate():
+  love=0
+  count1=0
+  for i in range(0,len(a)):
+    if a[i] =="t":
+      count1=count1+1
+    elif a[i] =="r":
+      count1=count1+1
+    elif a[i] =="u":
+      count1=count1+1
+    elif a[i] =="e":
+      count1=count1+1
+  count2=0
+  for i in range(0,len(b)):
+     if b[i] =="t":
+      count2=count2+1
+     elif b[i] =="r":
+        count2=count2+1
+     elif b[i] =="u":
+        count2=count2+1
+     elif b[i] =="e":
+        count2=count2+1
+  love=count1+count2
+  return love
+def cal1():
+  score=0
+  count3=0
+  for i in range(0,len(a)):
+    if a[i] =="l":
+      count3=count3+1
+    elif a[i] =="o":
+      count3=count3+1
+    elif a[i] =="v":
+      count3=count3+1
+    elif a[i] =="e":
+      count3=count3+1
+  count4=0
+  for i in range(0,len(b)):
+     if b[i] =="l":
+      count4=count4+1
+     elif b[i] =="o":
+        count4=count4+1
+     elif b[i] =="v":
+        count4=count4+1
+     elif b[i] =="e":
+        count4=count4+1
+  score=count3+count4
+  return score
+a=input('enter your name ')
+b=input("enter your lover's name ")
+c=calculate()
+d=cal1()
+result=str(c) + str(d)
+result=int(result)
+if (result<30 or result>90):
+  print('your score is',result,'%,you go together like coke and mentos')
+elif(result>40 and result<50):
+  print('love score is',result,'%,you are alright together')
+else:
+  print('your score is',result,'%')
